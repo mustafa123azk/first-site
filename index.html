@@ -106,4 +106,27 @@
         localStorage.setItem('rickRollCount', count);
         document.getElementById('count-number').innerText = count;
     }
+</script><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="updateCounter()" style="text-decoration: none;">
+    <button class="my-button">Click Me!</button>
+</a>
+
+<div style="margin-top: 50px; font-size: 10px; color: gray;">
+    Successes: <span id="count-number">0</span>
+</div>
+
+<script>
+    // 1. Dark Mode Logic
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+
+    // 2. Counter Logic - This part talks to the "count-number" span above
+    let count = localStorage.getItem('rickRollCount') || 0;
+    document.getElementById('count-number').innerText = count;
+
+    function updateCounter() {
+        count++;
+        localStorage.setItem('rickRollCount', count);
+        document.getElementById('count-number').innerText = count;
+    }
 </script>
