@@ -188,4 +188,12 @@ button {
 .mode-button {
     background-color: #444;
     color: white;
+}.main-image {
+    width: 300px;         /* Sets a specific width */
+    height: auto;          /* Keeps the image from looking squished */
+    border-radius: 15px;   /* Matches your button corners */
+    margin-bottom: 20px;   /* Pushes the buttons down a bit */
+    border: 3px solid var(--btn-color); /* Adds a frame that changes color! */
+}body.dark-mode .main-image {
+    filter: brightness(0.8) grayscale(0.2); /* Makes the image a bit dimmer for dark mode */
 }
