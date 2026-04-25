@@ -3,21 +3,20 @@
 <head>
     <title>My Tech Project</title>
     <style>
-        /* 1. VARIABLES - The Control Center */
+        /* 1. VARIABLES */
         :root {
             --bg-color: #f0f0f0;
             --text-color: #333333;
             --btn-color: #007bff;
         }
 
-        /* 2. THE DARK MODE SWITCH */
         body.dark-mode {
             --bg-color: #1a1a1a;
             --text-color: #ffffff;
             --btn-color: #555555;
         }
 
-        /* 3. BASE STYLES */
+        /* 2. BASE STYLES */
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -26,9 +25,19 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            transition: 0.4s ease; /* Makes the transition smooth */
+            transition: 0.4s ease;
+        }
+
+        /* 3. IMAGE STYLE */
+        .main-image {
+            width: 300px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
         }
 
         /* 4. BUTTON STYLES */
@@ -66,23 +75,21 @@
     <h1>Hello World!</h1>
     <p>I am building this website from scratch.</p>
 
-    <button class="my-button">Click Me!</button>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="website.jpg" alt="My Tech Photo" class="main-image">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: none;">
+        <button class="my-button">Click Me!</button>
+    </a>
     
     <button class="mode-button" onclick="toggleDarkMode()">Switch Dark/Light</button>
 
     <script>
         function toggleDarkMode() {
-            // This 'toggles' the class on the body
             document.body.classList.toggle("dark-mode");
         }
     </script>
 
 </body>
-</html><img src="my-photo.jpg" alt="A cool tech photo" class="main-image">
-<img src="https://picsum.photos/300/200" alt="Random Image" class="main-image">
-<img src="website.jpg" alt="My Tech Photo" class="main-image">
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-    <img src="website.jpg" alt="My Tech Photo" class="main-image">
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: none;">
-    <button class="my-button">Click Me!</button>
-</a>
+</html>
