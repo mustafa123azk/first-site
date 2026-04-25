@@ -3,20 +3,16 @@
 <head>
     <title>My Tech Project</title>
     <style>
-        /* 1. VARIABLES */
         :root {
             --bg-color: #f0f0f0;
             --text-color: #333333;
-            --btn-color: #007bff;
         }
 
         body.dark-mode {
             --bg-color: #1a1a1a;
             --text-color: #ffffff;
-            --btn-color: #555555;
         }
 
-        /* 2. BASE STYLES */
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -30,24 +26,22 @@
             transition: 0.4s ease;
         }
 
-        /* 3. IMAGE STYLE */
         .main-image {
             width: 300px;
-            max-width: 90%;
+            max-width: 80%;
             height: auto;
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
         }
 
-        /* 4. BUTTON STYLES */
         button {
-            padding: 20px 40px;
-            margin: 15px;
-            font-size: 20px;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
             font-weight: bold;
             border: none;
-            border-radius: 12px;
+            border-radius: 10px;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -58,15 +52,14 @@
         }
 
         .my-button:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             background-color: #0056b3;
         }
 
         .mode-button {
             background-color: #444;
             color: white;
-            font-size: 14px;
-            padding: 10px 20px;
+            font-size: 12px;
         }
     </style>
 </head>
