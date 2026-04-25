@@ -85,4 +85,25 @@
     </script>
 
 </body>
-</html>
+</html><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="updateCounter()" style="text-decoration: none;">
+    <button class="my-button">Click Me!</button>
+</a>
+
+<p style="font-size: 14px; opacity: 0.7;">
+    Victims count: <span id="count-number">0</span>
+</p><script>
+    // Dark Mode Function
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+
+    // Counter Function
+    let count = localStorage.getItem('rickRollCount') || 0;
+    document.getElementById('count-number').innerText = count;
+
+    function updateCounter() {
+        count++;
+        localStorage.setItem('rickRollCount', count);
+        document.getElementById('count-number').innerText = count;
+    }
+</script>
